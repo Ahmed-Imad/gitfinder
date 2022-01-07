@@ -3,6 +3,7 @@ import UserResults from "../components/users/UserResults"
 function home() {
     return (
         <>
+            
             <UserSearch/>
             <UserResults/>            
         </>
