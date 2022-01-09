@@ -25,7 +25,7 @@ const githubReducer = (state, action) => {
                 loading:false,
             }
         default:
-            return Error(`Unrecongized action of type: ${action.type}` )
+            throw new Error(`Unrecongized action of type: ${action.type}` )
     }
 }
 
