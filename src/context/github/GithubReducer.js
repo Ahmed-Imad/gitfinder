@@ -11,7 +11,7 @@ const githubReducer = (state, action) => {
                 ...state,
                 user: action.payload.user,
                 repos: action.payload.repos,
-                looading:false,
+                loading:false,
             }
         case 'SET_LOADING':
         return {
@@ -25,7 +25,7 @@ const githubReducer = (state, action) => {
                 loading:false,
             }
         default:
-            return state
+            return Error(`Unrecongized action of type: ${action.type}` )
     }
 }
 
